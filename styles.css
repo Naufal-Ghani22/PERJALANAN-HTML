@@ -1,0 +1,29 @@
+:root{
+    --primary: #044d13;
+    --bg: #6ce784;
+    --font1: #00220a;
+    --font2: #1a3a24;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+.nav{
+    display: inline;
+}
+
+li{
+    padding-left: 50px;
+    list-style: none;
+    float: left;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
