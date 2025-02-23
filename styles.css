@@ -5,7 +5,7 @@
     --font2: #1a3a24;
 }
 
-*{
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,9 +13,66 @@
     text-decoration: none;
     border: none;
 }
+body{
+    background-color: whitesmoke;
+} 
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== NAV ===== */
 .nav{
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.4rem;
+    background-color: var(--primary);
+    border-bottom: 1px solid #1a3a24;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99999;
+}
+
+.nav-nama{
+    color: azure;
+}
+
+.nav .nav-nav a{
+    color: azure;
+}
+
+.nav .nav-nav a:hover{
+    color: var(--bg);
+}
+
+.nav .nav-nav a:after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5px;
+    border-bottom: 0.1rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.nav .nav-nav a:hover:after{
+    transform: scaleX(0.5);
+}
+
+.nav .nav-ekstra a{
+    color: azure;
+    padding: 30px;
+}
+
+.nav .nav-ekstra a:hover{
+    color: var(--bg);
+    padding: 30px;
+}
+
+.nav-logo img{
+    width: 100px;
 }
 
 li{
@@ -24,6 +81,41 @@ li{
     float: left;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+/* ================ */
+/* == Responsive ==*/
+
+
+/* Laptop */
+@media (max-width: 1366px){
+    html {
+        font-size: 75%;
+    }
+    
+    .nav a img{
+        width: 75px;
+    }
 }
+
+/* Tablet */
+@media (max-width: 758px){
+    html {
+        font-size: 62.5%;
+    }
+    
+    .nav a img{
+        width: 50px;
+    }
+}
+
+
+/* Mobile Phone */
+@media (max-width: 450px){
+    html {
+        font-size: 55%;
+    }
+
+    .nav a img{
+        width: 25px;
+    }
+}
+
