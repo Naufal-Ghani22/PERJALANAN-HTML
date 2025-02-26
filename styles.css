@@ -1,138 +1,162 @@
-:root{
+:root {
     --primary: #044d13;
     --bg: #6ce784;
     --font1: #00220a;
     --font2: #1a3a24;
 }
 
-html{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: none;
-    text-decoration: none;
-    border: none;
+    font-size: 100%;
 }
-body{
-    background-color: whitesmoke;
-} 
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    min-height: 100vh;
 }
 
-/* ===== NAV ===== */
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 1.4rem;
+    padding: 1rem 2rem;
     background-color: var(--primary);
-    border-bottom: 1px solid #1a3a24;
+    border-bottom: 1px solid var(--font2);
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 99999;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
-.nav-nama{
-    color: azure;
-}
-
-.nav .nav-nav a{
-    color: azure;
-}
-
-.nav .nav-nav a:hover{
-    color: var(--bg);
-}
-
-.nav .nav-nav a:after{
-    content: '';
-    display: block;
-    padding-bottom: 0.5px;
-    border-bottom: 0.1rem solid var(--bg);
-    transform: scaleX(0);
-    transition: 0.2s linear;
-}
-
-.nav .nav-nav a:hover:after{
-    transform: scaleX(0.5);
-}
-
-.nav .nav-ekstra a{
-    color: azure;
-    padding: 30px;
-}
-
-.nav .nav-ekstra a:hover{
-    color: var(--bg);
-    padding: 30px;
-}
-
-.nav-logo img{
+.nav-logo img {
     width: 100px;
 }
 
-li{
-    padding-left: 50px;
+.nav-nama h1 {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.nav-ekstra a {
+    color: white;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-ekstra a:hover {
+    color: var(--bg);
+}
+
+.nav-nav {
+    display: flex;
     list-style: none;
-    float: left;
 }
 
-/* ================ */
-/* == Responsive ==*/
+.nav-nav li {
+    margin-left: 2rem;
+}
+
+.nav-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-nav a:hover {
+    color: var(--bg);
+}
+
+.hero {
+    margin-top: 140px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    background-image: url('image/Sampul Facebook-02.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--font1);
+    padding: 2rem;
+}
+
+.hero::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, whitesmoke 3%, rgba(0,0,0,0)25%);
+}
+
+.hero .content{
+    position: absolute;
+    text-shadow: 1px 1px 5px rgb(0, 255, 85, 0.2);
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero .content h1 {
+    padding-top: 700px;
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+.hero .content p {
+    color: var(--font2);
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    mix-blend-mode: difference;
+}
+
+.hero .cta {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: var(--bg);
+}
 
 
-/* Laptop */
-@media (max-width: 1366px){
-    html {
-        font-size: 75%;
-    }
+/* CONTAINER */
+.container {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.box {
+    height: 1000px;
+    background-color: none;
+    border: 1px;
+    border-style: dotted;
+    border-color: var(--font2);
+    display: flex;
+}
+
+
+.box .box1{
+    background-color: none;
     
-    .nav a img{
-        width: 75px;
-    }
 }
 
-/* Tablet */
-@media (max-width: 758px){
-    html {
-        font-size: 62.5%;
-    }
+.container .box .box1{
     
-    .nav a img{
-        width: 50px;
-    }
-
-    #menu{
-        display: inline-block;
-    }
-
-    .nav .nav-nav{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background-color: var(--font1);
-        width: 30rem;
-        height: 100vh;
-    }
-
-    .nav .nav-nav .active{
-        right: 0;
-    }
 }
 
-
-/* Mobile Phone */
-@media (max-width: 450px){
-    html {
-        font-size: 55%;
-    }
-
-    .nav a img{
-        width: 25px;
-    }
+.container .box.box1 img{
+    width: 50%;
 }
-
