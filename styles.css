@@ -142,9 +142,9 @@ body {
 .box {
     height: 700px;
     background-color: none;
-    border: 1px;
+    /* border: 1px;
     border-style: dotted;
-    border-color: var(--font2);
+    border-color: var(--font2); */
     display: flex;
     gap: 20px;
 }
@@ -162,9 +162,9 @@ body {
 
 /* IMAGE */
 .container .box.box1 img{
-    width: 80%;
+    width: 60%;
     height: auto;
-    display: block;
+    display: flex;
 }
 
 /* TEKS */
@@ -181,4 +181,51 @@ body {
 .container .box1 .teks h2{
     font-size: 50px ;
     color: var(--bg);
+}
+
+/* BOX KE 2 */
+
+.box2{
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.box2 .box2-judul{
+    text-align: center;
+    font-weight: 100;
+    line-height: 1.6;
+    align-items: center;
+    /* max-width: 200px; */
+}
+
+.box .box2-judul h2{
+    font-size: 50px;
+    color: var(--font1);
+}
+
+.box2 .box2-judul p{
+    /* max-width: 200px; */
+    justify-items: center;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+
+.row .menu-card1 .menu-card-img{
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px;
+}
+
+.footer{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 100px 0px;
 }
