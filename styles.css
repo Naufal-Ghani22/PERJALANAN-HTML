@@ -96,7 +96,7 @@ body {
 
 .hero .content{
     position: absolute;
-    text-shadow: 1px 1px 5px rgb(0, 255, 85, 0.2);
+    text-shadow: 1px 1px 5px rgba(7, 223, 79, 0.589);
     z-index: 10;
     left: 50%;
     transform: translateX(-50%);
@@ -130,33 +130,55 @@ body {
     background-color: var(--bg);
 }
 
-
 /* CONTAINER */
 .container {
     display: grid;
-    gap: 1rem;
-    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
 }
 
 .box {
-    height: 1000px;
+    height: 700px;
     background-color: none;
     border: 1px;
     border-style: dotted;
     border-color: var(--font2);
     display: flex;
+    gap: 20px;
 }
 
-
-.box .box1{
-    background-color: none;
-    
+.container .box1{
+    display: flex;
+    padding: 20px;
+    background-color: var(--font1);
+    border-radius: 40px;
+    box-shadow: 1px 1px 5px #00220a;
+    justify-content: space-around;
+    margin: 20px;
 }
+ 
 
-.container .box .box1{
-    
-}
-
+/* IMAGE */
 .container .box.box1 img{
-    width: 50%;
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+/* TEKS */
+
+.container .box1 .teks {
+    margin-top: 100px;
+}
+
+.container .box1 .teks p{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.container .box1 .teks h2{
+    font-size: 50px ;
+    color: var(--bg);
 }

@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
 
-<body>
-    <!-- Navigation Bar -->
-    <nav class="nav">
-        <div class="nav-logo">
-            <a href="#"><img src="image/LOGO NO BG-13.png" alt="Logo"></a>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#"><img src="image/LOGO NO BG-13.png" alt="Logo"></a>
+            </div>
+
+            <div class="nav-nama">
+                <h1>FIRSTTIME DESIGN</h1>
+            </div>
+
+            <div class="nav-ekstra">
+                <a href="#" id="search"><i data-feather="search"></i></a>
+                <a href="#" id="activity"><i data-feather="activity"></i></a>
+                <a href="#" id="menu"><i data-feather="menu"></i></a>
+            </div>
+
+            <ul class="nav-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Specialist</a></li>
+                <li><a href="#">My Life</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <main class="content">
+                <h1>Selamat Menjelajah <span>Portofolio Saya</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione officiis sequi asperiores rem laudantium minima quibusdam voluptatum.</p>
+                <a href="#container" class="cta">Yuk Jelajahi</a>
+            </main>
+        </section>
+
+        <!-- Content Boxes -->
+        <div class="container" id="container">
+            <div class="box box1">
+                <div class="gambar">
+                    <img src="image/LOGO NO BG-13.png" alt="image">
+                </div>
+                <div class="teks">
+                    <h2>OUR <span>LOGO</span></h2><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cumque impedit id quidem magnam voluptatem velit quis totam placeat, aliquid quibusdam? Aut minima sed sint temporibus nam repudiandae atque maxime.</p>
+                </div>
+            </div>
+            <div class="box box2">
+
+            </div>
+            <div class="box box3">
+
+            </div>
+            <div class="box box4">
+
+            </div>
+            <div class="box box5">
+
+            </div>
+            <div class="box box6">
+
+            </div>
         </div>
 
-        <div class="nav-nama">
-            <h1>FIRSTTIME DESIGN</h1>
-        </div>
+        <!-- Feather Icons -->
+        <script>
+            feather.replace();
+        </script>
 
-        <div class="nav-ekstra">
-            <a href="#" id="search"><i data-feather="search"></i></a>
-            <a href="#" id="activity"><i data-feather="activity"></i></a>
-            <a href="#" id="menu"><i data-feather="menu"></i></a>
-        </div>
-
-        <ul class="nav-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Specialist</a></li>
-            <li><a href="#">My Life</a></li>
-        </ul>
-
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <main class="content">
-            <h1>Selamat Menjelajah <span>Portofolio Saya</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ratione officiis sequi asperiores rem laudantium minima quibusdam voluptatum.</p>
-            <a href="#container" class="cta">Yuk Jelajahi</a>
-        </main>
-    </section>
-
-    <!-- Content Boxes -->
-    <div class="container" id="container">
-        <div class="box box1">
-            <img src="image/LOGO NO BG-13.png" alt="">
-            <h2>OUR <span>LOGO</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cumque impedit id quidem magnam voluptatem velit quis totam placeat, aliquid quibusdam? Aut minima sed sint temporibus nam repudiandae atque maxime.</p>
-        </div>
-        <div class="box box2">
-
-        </div>
-        <div class="box box3">
-
-        </div>
-        <div class="box box4">
-
-        </div>
-        <div class="box box5">
-
-        </div>
-        <div class="box box6">
-
-        </div>
-    </div>
-
-    <!-- Feather Icons -->
-    <script>
-        feather.replace();
-    </script>
-
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+    </body>
 </html>
